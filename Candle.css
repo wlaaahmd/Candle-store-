@@ -1,0 +1,108 @@
+.container{
+    margin:5px auto;
+    padding-block:50px
+}
+.container .buttons ul{
+    display:flex;
+    gap:50px;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    margin:30px auto;
+   
+   
+}
+.container .buttons ul li{
+list-style:none;
+border:1px solid rgb(180, 138, 84);
+padding:10px 15px;
+border-radius:10px;
+color:rgb(114, 84, 45);
+font-size:19px;
+cursor:pointer;
+text-transform:capitalize;
+
+
+
+}
+.active{
+    background:brown;
+    color:white !important;
+}
+
+/* images */
+.container  .products{
+    align-items:center;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    text-align:center;
+    gap:20px;
+   
+}
+
+/* .container .products .card{ 
+    padding: 15px;
+    border: 1px solid burlywood;
+}
+*/
+.container .products .card img{
+    width:350px;
+    height:400px;
+    max-width:100%;
+    max-height:100%;
+    border-bottom: 1px solid brown ;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+}
+
+.container .products .card {
+    position: relative; /* Ensure the card is the reference point for positioning */
+}
+
+.container .products .card img {
+    width: 350px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    border-bottom: 1px solid brown;
+    border-radius: 20px;
+}
+
+.container .products .card .name {
+    position: absolute;
+    top: 70%; /* Center vertically over the image */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset to truly center the text */
+    font-size: 24px;
+    font-style: italic;
+    color: unset;
+     /* Semi-transparent background for readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2; /* Ensure the name appears above the image */
+}
+
+
+.container .products .card h1{
+ text-transform: capitalize ;   
+ color: brown;
+}
+.container .products .card span{
+   text-transform: capitalize; 
+   border: 1px solid rgb(151, 31, 31);
+   padding: 10px 15px;
+   transition: 0.3s all ease-in;
+   cursor: pointer;
+   color: brown;
+   border-radius: 10px;
+   margin-bottom: 5px;
+}
+.container .products .card span:hover{
+  background-color: brown; 
+  color: white; 
+}
+
+
+
+
+
